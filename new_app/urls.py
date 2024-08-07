@@ -6,5 +6,6 @@ urlpatterns =[
     path("home",views.home,name="home"),
     path("index",views.index,name="index"),
     path("dash",views.dash,name="dash"),
-    path("data",views.furniture,name="data")
+    path("data",views.furniture,name="data"),
+    path("table",views.furniture_view,name="furniture_view")
 ]

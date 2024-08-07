@@ -1,12 +1,10 @@
 {% extends 'dash.html' %}
 {%load crispy_forms_tags %}
-
 {% block content %}
-
-<h1> welcome </h1>
-
-{{ form|crispy }}
-<button  class="btn btn-outline-primary"> submit </button>
-
-
+<form method ='post'>
+    {% csrf_token %}
+    <h1> welcome </h1>
+    {{ form|crispy }}
+    <button  class="btn btn-outline-primary"> submit </button>
+</form>
 {% endblock %}
